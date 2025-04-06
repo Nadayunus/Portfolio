@@ -296,15 +296,13 @@ padding: 30px 0;
     display: block;
 }
 /* ---------------------------screen--------------------------------------------------- */
- nav .fa-solid{
-    display: none;
 }
-@media only screen and (max-width: 615px){
+/* @media only screen and (max-width: 650px){
        nav ul{
         background: #ff004f;
         position: fixed;
         top:0;
-        right: -200px;
+        right: 0px;
         width:200px;
         height: 100vh;
         padding-top: 50 px;
@@ -315,7 +313,7 @@ padding: 30px 0;
         margin: 25px;
 
        }
-}
+} */
 /*        nav .fa-solid{
         display: block;
         font-size: 25px;
