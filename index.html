@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+   <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "jnf8oaTcfgojjDTcL",
+      });
+   })();
+</script> -->
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>N</span>ada. </h1>
+                
+                <ul id="side">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <i class="fa-solid fa-bars" onclick="openmenu()"></i> -->
+                    <i class="fa-solid fa-xmark" onclick="closemenu"></i>
+                </ul>
+                <!-- <i class="fa-solid fa-bars"></i> -->
+            </nav>
+            <div class="header-text">
+                <p>Aspiring software Developer</p>
+                <h1>Hi,I'm <span>Nada</span><br> Yunus From Kerala </h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------ABOUT------------------------------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                   <img src="nadapic.jpg" width="200px">
+                </div>
+                <div class="col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="text1">Aspiring to embark on a rewarding career in the IT industry, where i can utilize my academic knowledge and strong  
+                        work ethic to deliver high-quality solutions.Eager to join a dynamic organization that values innovation and provid-
+                        es opportunities to learn and grow as a computer science professional.Committed to continuous learning and apply-
+                        ing best practices to deliver efficient and effective software solutions. </p>
+                        <div class="tab-title">
+                            <p class="title1  active" onclick="opentab('skills')">Skills</p>
+                            <p class="title1"  onclick="opentab('education')">Education</p>
+                            <!-- <p class="title1"  onclick="opentab('experience')">Experience</p> -->
+                        </div>
+                        <div class="tab-content active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br> Web App Development</li>
+                                <li><span>HTML/CSS</span><br> Web design</li>
+                                <li><span>Programming</span><br> JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="education">
+                            <ul>
+                                <li><span>2025</span><br> B.Tech Graduate From SCET Tvm</li>
+                                <li><span>2021</span><br> Higher Secondary(Calicut)</li>
+                                <li><span>2019</span><br> SSLC(Calicut)</li>
+                            </ul>
+                        </div>
+                        <!-- <div class="tab-content active-tab" id="experience">
+                            <ul>
+                                <li><span>2025</span><br> Trainee At Bridgeon</li>
+
+                            </ul>
+                        </div> -->
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------MY PROJECT------------------------------------------------------------------------------------------------------- -->
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="goibibo.jpg">
+                    <div class="anime">
+                        <h3>Goibibo.com</h3>
+                        <p>This is the basic website clone of goibibo.com,created using HTML and CSS and this is my first website clone. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <!-- ----------------------------------------MY PASSION------------------------------------------------------------------------------------------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Passion</h1>
+            <div class="passion-list">
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML</h2>
+                    <p>HTML is a Hyper Text Markup Language that is used to describe the content ot structure of webpage.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-cuttlefish"></i>
+                    <h2>C Language</h2>
+                    <p>C programming is a general purpose,procedural,and low level language for access to system memory.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-js"></i>
+                    <h2>JavaScript</h2>
+                    <p>JavaScript is a scripting language as well as a programming language used to interact with the web pages.</p>
+                    <a href="#">learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  
+
+
+    <!-------------------------------------CONTACT-------------------------------------------------------------------------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> nadayunuseng@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 9746173284</p>
+                <div class="social-icon">
+                    <a href="#"></a><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"></a><i class=" fa-brands fa-twitter"></i></a>
+                    <a href="#"></a><i class=" fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download CV</a>
+              </div>
+              <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email"  name="email" placeholder="Enter email" required>
+                    <textarea type="text" rows="6" name="message" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2" onclick="sentMail()" >SUBMIT</button>
+                </form>
+                <span id="msg"></span>
+              </div>
+            </div>
+        </div>
+        <div class="copy">
+            <p>© 2025 Nada. All Rights Reserved.</p>
+        </div>
+    </div>
+
+
+    <script>
+        var title=document.getElementsByClassName("title1");
+        var tabcontent=document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(title of title){
+                title.classList.remove("active");
+            }
+            for(tabcontent of tabcontent){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var side=document.getElementById("side");
+        function closemenu(){
+            side.style.right="0";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxRgD6H44gw7FLfvtHQ8OWf-Ic7EHq-2aOW82XzQB16HxLNjXzvBjLSTz-Y0r2jILUr0g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

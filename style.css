@@ -1,0 +1,338 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #0e0e0e;
+    color:#fff ;
+}
+#header{
+    width:100%;
+    height: 100vh;
+    background-color:black;
+
+}
+.container{
+    padding: 10px 10%;
+}
+
+.container h1{
+    font-size: 30px;
+}
+.container h1 span{
+    color: #ff004f;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width:140px;
+}
+nav a{
+    position: fixed;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin:10px 20px;
+}
+nav ul li a{                
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition:0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+/* -------------------------------about---------------------------------------------*/
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.col1{
+    flex-basis: 35%;
+}
+.col1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.col2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.tab-title{
+    display: flex;
+    margin:20px 0 40px;
+}
+.title1{
+    margin-right: 50px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.title1::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background: #ff004f;
+    left: 0;
+    bottom: -8px;
+    position: absolute;
+    transition: 0.5s;
+}
+.title1.active::after{
+    width: 50%;
+}
+.tab-content ul li{
+    list-style-type: none;
+    margin: 10px 0;
+}
+.tab-content ul li span{
+    color: #b54769;
+    font-size: 14px;
+    
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active-tab{
+    display: block;
+}
+.contact-left{
+    flex-basis: 30%;
+
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+        margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icon{
+    margin-top: 30px;
+    
+}
+.social-icon i{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+
+}
+.social-icon i:hover{
+    color:lightseagreen;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background:#ff004f;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    width: 140px;
+    height: 47px;
+    color: white;
+    margin-top: 30px;
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+/* --------------------------------------passion----------------------------------------------- */
+#portfolio{
+padding: 30px 0;
+}
+.passion-list{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-bottom: 35px;   
+    gap: 25px;
+    
+}
+.passion-list div{
+    background: #363434;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 8px;
+    transition: background 0.5s,transform 0.5s;
+}
+.passion-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.passion-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.passion-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.passion-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+/* -----------------------------------------------PROJECT-------------------------------------------------------- */
+#service{
+    padding: 50px 0;
+}
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.project img{
+    width: 45%;
+    border-radius: 10px;
+    display: block;
+    transition:transform 0.5s;
+}
+.anime{
+    width:47.5%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),rgb(225, 7, 43));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    flex-direction: column;
+    transition: height 0.5s;
+    font-size: 14px;
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+.anime h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.project:hover .anime{
+    height: 100%;
+}
+.copy{
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    padding: 25px;
+    background: #262626;   
+    font-weight: 300;
+    margin-top: 20px;
+}
+#msg{
+    color: #61b752;
+    margin-top: 10px;
+    display: block;
+}
+/* ---------------------------screen--------------------------------------------------- */
+ nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 615px){
+       nav ul{
+        background: #ff004f;
+        position: fixed;
+        top:0;
+        right: -200px;
+        width:200px;
+        height: 100vh;
+        padding-top: 50 px;
+        z-index: 2;
+       }
+       nav ul li{
+        display: block;
+        margin: 25px;
+
+       }
+       nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top:0;
+        right:0;
+        width: 200px;
+        height: 40vh;
+        padding-top: 50px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top:25px;
+        cursor: pointer;
+        padding-left: 20px;
+    }
+ 
+}
